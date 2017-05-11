@@ -6,10 +6,11 @@ function loadTemplate(element,id){
         alert ("Browser does not support HTTP Request");
         return;
     }
-    var url = "citaition?tmp="+id;
-    xmlHttp.open("GET",url,true)
-    xmlHttp.send(null)
-    par.appendChild(xmlHttp.responseText);
+    var url = "citation.php?tmp="+id;
+    httpxml.open("GET",url,true)
+    httpxml.send(null)
+    console.log(httpxml.responseType)
+    par.appendChild(httpxml.responseText);
     console.log("Loaded template");
     
 }

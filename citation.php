@@ -1,4 +1,4 @@
 <?php
     $tmp = $_GET['tmp'];    // Which template
-    echo file_get_contents("static/template/citation/" . $tmp . ".html");
+    echo file_get_contents("static/Template/Citation/" . $tmp . ".html");   // Case!
 ?>
