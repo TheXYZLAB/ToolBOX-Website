@@ -1,7 +1,7 @@
 // use http://jquery.malsup.com/form/#api to submit form
 function initializeBot(element){
     console.log($(element).formSerialize());    // malsup is blocked
-    $.get('citationbot.php?URL='+$(element).formSerialize()+"&type="+element.id,function(data){
+    $.get('citationbot.php?'+$(element).formSerialize()+"&type="+element.id,function(data){
             var citationdata = JSON.parse(data);
             $.get('loadtmp.php',{'tmp':'Citation/fullCitation'},function(data){
                     var htmltmp = data;
@@ -37,17 +37,17 @@ function initializeBot(element){
                                 // code
                                 break;
                             case 'APA':
-                                citationtext += $(form).find("input#author").attr("value")+". ";
-                                citationtext += "("+$(form).find("input#pubdate").attr("value")+"). ";
-                                citationtext += "In <i>"+$(form).find("input#publisher").attr("value")+".</i> ";
-                                citationtext += "Retrieved "+$(form).find("input#accdate").attr("value")+", ";
-                                citationtext += "from "+$(form).find("input#url").attr("value");
+                                citationtext += $("input#author").val()+". ";
+                                citationtext += "("+$("input#pubdate").val()+"). ";
+                                citationtext += "In <i>"+$("input#publisher").val()+".</i> ";
+                                citationtext += "Retrieved "+$("input#accdate").val()+", ";
+                                citationtext += "from "+$("input#url").val();
                                 break;
                             default:
                                 citationtext = "Still under develop"
                                 // code
                         }
-                        $(par.lastChild).append("<span><h3>Please copy me</h3>"+citationtext+"</span>");   // Place citation inside the form
+                        $(par.lastChild).append("<span><br/><h3>Please copy me</h3>"+citationtext+"</span>");   // Place citation inside the form
                         return false;   // Prohibit submit
                     });
                     $(par.lastChild).slideToggle('slow');

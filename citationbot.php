@@ -2,7 +2,7 @@
     error_reporting(E_ALL^E_NOTICE^E_WARNING);  // Prevent warning output
     include_once("simple_html_dom.php");
     $url = $_GET['URL'];
-    $url = substr($url,4);
+    // $url = substr($url,4);
     $result = array('url'=>$url,'article'=>'','author'=>'','sitename'=>'','publisher'=>'','pubdate'=>'','accdate'=>'');   // Initialize result array
     $html = file_get_html($url);
     // Return list of contents

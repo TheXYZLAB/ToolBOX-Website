@@ -1,3 +1,3 @@
-<?php
-    // Deal with files download
+<?php 
+
 ?>

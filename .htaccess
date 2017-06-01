@@ -1,0 +1,4 @@
+<IfModule mod_rewrite.c>
+              ErrorDocument 500 /static/error/500.php
+              ErrorDocument 404 /static/error/404.php
+      </IfModule>

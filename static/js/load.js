@@ -1,5 +1,5 @@
 function loadTemplate(element,id){
-    var par = element.parentElement.parentElement.parentElement.parentElement;  // a li ul div
+    var par = $(element).parents('div')[0];
     var httpxml=GetXmlHttpObject();
     if (httpxml==null)
     {
@@ -27,9 +27,7 @@ function loadTemplate(element,id){
            $(par.lastChild).submit(function(){
                return false;
             });
-            $(par.lastChild).reset(function(){
-               $(par.lastChild).clearForm();
-             });
+        
            // console.log(nodes.id);
        }
        }

@@ -1,0 +1,23 @@
+[20-May-2017 10:28:17 UTC] PHP Fatal error:  Call to undefined function file_get_content() in /home/ubuntu/workspace/static/error/404.php on line 44
+[20-May-2017 10:28:17 UTC] PHP Stack trace:
+[20-May-2017 10:28:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/static/error/404.php:0
+[20-May-2017 10:28:24 UTC] PHP Warning:  file_get_contents(static/Template/footer.html): failed to open stream: No such file or directory in /home/ubuntu/workspace/static/error/404.php on line 44
+[20-May-2017 10:28:24 UTC] PHP Stack trace:
+[20-May-2017 10:28:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/static/error/404.php:0
+[20-May-2017 10:28:24 UTC] PHP   2. file_get_contents() /home/ubuntu/workspace/static/error/404.php:44
+[20-May-2017 10:28:28 UTC] PHP Warning:  file_get_contents(static/Template/footer.html): failed to open stream: No such file or directory in /home/ubuntu/workspace/static/error/404.php on line 44
+[20-May-2017 10:28:28 UTC] PHP Stack trace:
+[20-May-2017 10:28:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/static/error/404.php:0
+[20-May-2017 10:28:28 UTC] PHP   2. file_get_contents() /home/ubuntu/workspace/static/error/404.php:44
+[20-May-2017 10:28:40 UTC] PHP Warning:  file_get_contents(/static/Template/footer.html): failed to open stream: No such file or directory in /home/ubuntu/workspace/static/error/404.php on line 44
+[20-May-2017 10:28:40 UTC] PHP Stack trace:
+[20-May-2017 10:28:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/static/error/404.php:0
+[20-May-2017 10:28:40 UTC] PHP   2. file_get_contents() /home/ubuntu/workspace/static/error/404.php:44
+[20-May-2017 10:29:07 UTC] PHP Warning:  file_get_contents(http://127.0.0.1/static/Template/footer.html): failed to open stream: Connection refused in /home/ubuntu/workspace/static/error/404.php on line 44
+[20-May-2017 10:29:07 UTC] PHP Stack trace:
+[20-May-2017 10:29:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/static/error/404.php:0
+[20-May-2017 10:29:07 UTC] PHP   2. file_get_contents() /home/ubuntu/workspace/static/error/404.php:44
+[20-May-2017 10:29:28 UTC] PHP Warning:  file_get_contents(Template/footer.html): failed to open stream: No such file or directory in /home/ubuntu/workspace/static/error/404.php on line 44
+[20-May-2017 10:29:28 UTC] PHP Stack trace:
+[20-May-2017 10:29:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/static/error/404.php:0
+[20-May-2017 10:29:28 UTC] PHP   2. file_get_contents() /home/ubuntu/workspace/static/error/404.php:44

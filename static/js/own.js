@@ -6,6 +6,7 @@ function selectButton(element){
     }
     element.setAttribute("class","button special");
 }
+
 /*function loadTemplate(element,id){
     var tmp = document.querySelector('#'+id);
     var par = element.parentElement.parentElement.parentElement.parentElement;
