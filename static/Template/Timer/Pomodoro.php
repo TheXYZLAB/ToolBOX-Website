@@ -1,4 +1,4 @@
-<form onsubmit="starttimer(this)" onreset="stoptimer(this);document.getElementsByTagName('audio')[0].muted=true;" time=25 style="display:none">
+<form onsubmit="starttimer(this);return false" onreset="stoptimer(this);document.getElementsByTagName('audio')[0].muted=true;" time=25 style="display:''">
     <!--// 25 min counterdown + title
     // Unable to load js about DOM is loaded
     // Use form submit to call function
@@ -12,7 +12,7 @@
         </div>
         <div class="12u$">
     	    <ul class="actions">
-    		    <li><input type="submit" value="Begin" class="special"></li>
+    		    <li><input type="submit" value="Start" class="special"></li>
     			<li><input type="reset" value="Reset"></li>
     		</ul>
     	</div>

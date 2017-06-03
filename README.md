@@ -23,7 +23,8 @@ This section has a list of links that we think are helpful for students:
 * [Transfer to ACT](http://www.act.org/content/act/en.html)
 
 ### Timer
-**Still in development**
+Timer section provides a simple countdown timer for users to schedule their time.
+Timer section allows users to modify their task name and task duration. When time is up, it will also play "beep" sound to inform users.
 ### Links
 There are four parts under this section: Programmers，Academic，Tools, and related websites
 # Error
